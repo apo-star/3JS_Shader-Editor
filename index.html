@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/editor.css">
+        <link rel="stylesheet" href="assets/css/gallery.css">
+        <link rel="stylesheet" href="assets/css/scroll.css">
+        <title>Shader Editor</title>
+    </head>
+    <body>
+        <div class="content">
+            <div id="container" class="container">
+            </div>
+            <div class="editor-content">
+                <div class="gallery-content scrollbar" id="scrollbar2">
+                    <div class="responsive">
+                        <a id="rainbow_shadow">
+                            <div class="gallery">
+                                <img src="assets/img/rainbow.png" alt="Forest" width="600" height="400">
+                                <div class="desc">Rainbow</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="responsive">
+                        <a id="colorring_shader">
+                            <div class="gallery">
+                                <img src="assets/img/colorring.png" alt="Northern Lights" width="600" height="400">
+                                <div class="desc">Color Ring</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="responsive">
+                        <a id="firewall_shader">
+                            <div class="gallery">
+                                <img src="assets/img/firewall.png" alt="Northern Lights" width="600" height="400">
+                                <div class="desc">FireWall</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="responsive">
+                        <a id="pinkvoid_shader">
+                            <div class="gallery">
+                                <img src="assets/img/pinkvoid.png" alt="Northern Lights" width="600" height="400">
+                                <div class="desc">Pink Void</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div id="editor" class="code-editor"></div>
+                <div class="editor-controls">
+                    <div class="contorls-content">
+                        <div class="control-btn-group">
+                            <button class="control-btn">Preview</button>
+                            <button id="compile" class="control-btn">Compile</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="main.js" type="module"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.9.6/ace.js" type="text/javascript" charset="utf-8"></script>
+    </body>
+</html>

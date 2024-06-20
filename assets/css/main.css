@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+    background-color: #051015;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.content{
+    display: flex;
+    height: 600px;
+}
+
+.container{
+    width: 50%;
+}
