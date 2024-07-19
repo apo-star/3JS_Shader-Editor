@@ -1,11 +1,11 @@
 export const shaderData = {
-    vertexShader: `varying vec2 vUv;
-void main() {
-    vUv = uv;
-    gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 0.5 );
-}`,
-    rainbow: {
-        fragementShader : `uniform vec2 iResolution;
+  vertexShader: `varying vec2 vUv;
+        void main() {
+        vUv = uv;
+        gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 0.5 );
+    }`,
+  rainbow: {
+    fragementShader: `uniform vec2 iResolution;
 uniform float iTime;
 
 #define EPS vec2(1e-4, 0.0)
@@ -114,10 +114,10 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
 varying vec2 vUv;
 void main() {
   mainImage(gl_FragColor, vUv * iResolution.xy);
-}`
-    },
-    colorRing: {
-        fragementShader: `uniform vec2 iResolution;
+}`,
+  },
+  colorRing: {
+    fragementShader: `uniform vec2 iResolution;
 uniform float iTime;
 
 #define TAU 6.2831852
@@ -182,10 +182,10 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
 varying vec2 vUv;
 void main() {
   mainImage(gl_FragColor, vUv * iResolution.xy);
-}`
-    },
-    fire: {
-        fragementShader: `uniform float iTime;
+}`,
+  },
+  fire: {
+    fragementShader: `uniform float iTime;
 uniform float fogDensity;
 uniform vec3 fogColor;
 uniform vec2 iResolution;
@@ -239,10 +239,10 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
 varying vec2 vUv;
 void main() {
   mainImage(gl_FragColor, vUv * iResolution.xy);
-}`
-    },
-    pinkVoid: {
-        fragementShader: `uniform float iTime;
+}`,
+  },
+  pinkVoid: {
+    fragementShader: `uniform float iTime;
 uniform vec2 iResolution;
 
 #define PI 3.14159265359
@@ -423,6 +423,6 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
 varying vec2 vUv;
 void main() {
   mainImage(gl_FragColor, vUv * iResolution.xy);
-}`
-    }
+}`,
+  },
 };
